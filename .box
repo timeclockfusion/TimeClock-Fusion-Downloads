@@ -1,0 +1,20 @@
+################################################
+## GENERAL SETTINGS
+################################################
+shared_writable_dirs:
+    - /downloads
+ 
+ 
+################################################
+## WEB SPECIFIC SETTINGS
+################################################
+document_root: /downloads
+index_list: [index.php, index.html]
+default_gateway: index.php   
+
+################################################
+## PHP SPECIFIC SETTINGS
+################################################
+php_extensions: [curl, eaccelerator, fileinfo, gd2, mysql, pdo_mysql, zip]
+php_error_reporting: 'E_ALL'
+php_display_errors: On
